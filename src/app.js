@@ -1,11 +1,17 @@
-const express = require("express")
-const path = require("path")
+const express = require("express");
+const path = require("path");
+const indexRoute = require("./routes/indexRoute")
 
-const app = express()
-const port = process.env.PORT || 8001
+const app = express();
+const port = process.env.PORT || 8001;
 
-express.static(path.join(__dirname, "public"))
+app.use(express.static(path.join(__dirname, "public")));
 
-app.set('view engine', 'ejs')
+app.set('views', path.join(__dirname, "public"))
+app.set("view engine", "ejs");
 
 
+app.use("/", indexRoute);
+
+app.listen(port, ()=> {
+    console.log(`Server Runing in http://localhost:${port}`);})

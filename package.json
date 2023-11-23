@@ -1,8 +1,8 @@
 {
-  "name": "Pimienta y Sal",
+  "name": "pepper_and_salt",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node src/app.js",
