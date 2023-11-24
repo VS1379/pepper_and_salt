@@ -1,8 +1,7 @@
-
 const controller = {
-    index: (req,res) => {
-        res.render("index")
-    }
-}
+  index: (req, res) => {
+    res.render("./index");
+  },
+};
 
-module.exports = controller
+module.exports = controller;
