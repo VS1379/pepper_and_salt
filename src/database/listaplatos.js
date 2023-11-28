@@ -1,4 +1,4 @@
-const listaPlatos = [
+const platos = [
   {
     id: 1,
     titulo: "Carpaccio fresco",
@@ -37,4 +37,4 @@ const listaPlatos = [
     img: "esparragos.png",
   },
 ];
-module.exports = listaPlatos;
+module.exports = platos;
